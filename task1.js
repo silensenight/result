@@ -1,8 +1,8 @@
-const i = parseFloat(process.argv[2]);
-const a = parseFloat(process.argv[3]);
-const b = parseFloat(process.argv[4]);
+var result = 0;
+var a = Number(process.argv[2]);
+var b = Number(process.argv[3]);
+for (var i = 1; i <= a; i++) {
+    result += Math.pow(i, b);   
+}
 
-let i10 = parseInt(i, a);
-let ib = i10.toString(b);
-
-process.stdout.write(ib);
+process.stdout.write(String(result));
