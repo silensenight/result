@@ -1,8 +1,6 @@
-var result = 0;
-var a = Number(process.argv[2]);
-var b = Number(process.argv[3]);
-for (var i = 1; i <= a; i++) {
-    result += Math.pow(i, b);   
-}
-
-process.stdout.write(String(result));
+var i=(process.argv[2]); 
+var a=(process.argv[3]); 
+var b=(process.argv[4]); 
+var med=parseInt(i, a)
+var result = ( med.toString(b) );
+process.stdout.write(result);
